@@ -1,0 +1,110 @@
+@media(max-width: 614px){
+    .body {
+        width: 100%;
+    }
+
+    .top {
+        width: 100%;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* ------ OLHAR O TAMANHO NOVAMENTE ----- */
+    .top icon-icon {
+        font-size: 22px;
+    }
+
+    .story {
+        background-color: #e5e5e5;
+        border-bottom: 1px solid #dbd9d9;
+        border-top: 1px solid #dbd9d9;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .boxStory {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .boxStory img {
+        width: 66px;
+        height: 66px;
+        border-radius: 50px;
+        margin-top: 15px;
+    }
+    .boxStory p {
+        margin-top: 0;
+    }
+
+    .nameUser {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .imgName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgName img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    .imgPost img{
+        width: 100%;
+        height: auto;
+    }
+
+    .infoPost {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+
+    .interactions {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .likes {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .likes img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+
+    .spaceBetweenPosts {
+        background-color: #e5e5e5;
+        border-bottom: 1px solid #dbd9d9;
+        border-top: 1px solid #dbd9d9;
+        width: 100%;
+        height: 40px;
+    }
+
+    .bottom {
+        background-color: white;
+        width: 100%;
+        height: 54px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+    }
+
+}
