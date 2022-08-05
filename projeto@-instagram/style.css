@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap");
+* {
+    box-sizing: border-box;
+}
+
 @media(max-width: 614px){
     .body {
         width: 100%;
+        font-family: 'Roboto', sans-serif;
     }
 
     .top {
@@ -9,6 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 20px;
     }
     /* ------ OLHAR O TAMANHO NOVAMENTE ----- */
     .top icon-icon {
@@ -20,72 +27,90 @@
         border-bottom: 1px solid #dbd9d9;
         border-top: 1px solid #dbd9d9;
         width: 100%;
-        height: 100px;
+        height: 121px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding-left: 18px;
     }
-
+    /* ------PRECISA AJUSTAR/ALINHAR------ */
     .boxStory {
+        /* width: 78px;
+        height: 86px; */
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
     }
     .boxStory img {
         width: 66px;
         height: 66px;
         border-radius: 50px;
-        margin-top: 15px;
     }
     .boxStory p {
-        margin-top: 0;
+        width: 78px;
+        height: 19px;
     }
 
-    .nameUser {
+    /* .post {
+        width: 100%;
+        height: 749px;
+    } */
+
+    .namePost {
+        height: 61px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-left: 17px;
+        padding-right: 15px;
     }
     .imgName {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .imgName img {
         width: 32px;
         height: 32px;
         border-radius: 50px;
-        margin-right: 10px;
+        margin-right: 15px;
     }
     .imgPost img{
         width: 100%;
         height: auto;
     }
-
     .infoPost {
         display: flex;
         flex-direction: column;
-        margin-top: 5px;
     }
-
     .interactions {
+        height: 42px;
         display: flex;
         justify-content: space-between;
-    }
+        align-items: center;
+        padding: 10px 15px;
 
+    }
+    .firstInteractions {
+        width: 93px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .likes {
+        height: 34px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        padding-left: 17px;
+        padding-bottom: 14px;
     }
-
     .likes img {
         width: 20px;
         height: 20px;
         border-radius: 50px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .spaceBetweenPosts {
@@ -93,7 +118,7 @@
         border-bottom: 1px solid #dbd9d9;
         border-top: 1px solid #dbd9d9;
         width: 100%;
-        height: 40px;
+        height: 60px;
     }
 
     .bottom {
@@ -101,10 +126,10 @@
         width: 100%;
         height: 54px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding: 0 20px;
         position: fixed;
         bottom: 0;
     }
-
 }
