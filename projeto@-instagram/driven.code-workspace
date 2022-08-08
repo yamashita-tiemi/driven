@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "driven",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"editor.linkedEditing": true,
+		"liveServer.settings.multiRootWorkspaceName": "driven"
+	}
+}
