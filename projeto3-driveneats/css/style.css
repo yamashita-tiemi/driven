@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     /* background-color: aqua; */
     background-color: #E5E5E5;
-    width: 414px;
     margin: 0 auto;
 }
 body h1 {
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     font-size: 26px;
     color: #FFFFFF;
+    margin-bottom: 5px;
 }
 body h2 {
     font-size: 18px;
@@ -38,9 +41,12 @@ body p {
 
 .top {
     background-color: #CF2B2B;
-    width: 414px;
+    width: 100%;
     height: 92px;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding-left: 21px;
     position: fixed;
     top: 0;
@@ -49,7 +55,6 @@ body p {
 .dish {
     /* background-color: blue; */
     width: 100%;
-    height: 258px;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between;
@@ -62,17 +67,19 @@ body p {
 }
 
 .items {
+    /* height: 216px; */
     display: flex;
-    overflow: hidden;
+    overflow-x: scroll;
 }
 
 .item {
     background-color: #FFFFFF;
-    width: 172px;
+    min-width: 172px;
     height: 216px;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin-top: 17px;
     margin-right: 16px;
@@ -81,8 +88,8 @@ body p {
     width: 144px;
     height: 87px;
     border-radius: 4px;
-    margin-top: 18px;
-    margin-bottom: 8px;
+    /* margin-top: 18px;
+    margin-bottom: 8px; */
 }
 
 .infoItem {
@@ -124,16 +131,24 @@ body p {
 .bottom {
     /* background-color: purple; */
     background-color: #FFFFFF;
-    width: 414px;
+    width: 100%;
     height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
 }
+/* -----CENTRALIZAR O TEXTO---- */
 .finish {
     background-color: #CBCBCB;
     width: 364px;
     height: 61px;
-    border-radius: 50px;
-    text-align: center;
-    vertical-align: middle;
+    border-radius: 50px;    
+}
+.finish > h5 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
