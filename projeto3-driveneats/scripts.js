@@ -1,25 +1,28 @@
-function itemButton() {
+function selectedItemButton(itemButton) {
     //SELECIONAR AO CLICAR NO ITEM
-    let s = document.querySelector(".items");
+    const selectedButton = document.querySelector('.selected');
 
-    // if () {
-    //     //DESMARCAR CO OUTRO SE JA ESTIVER SELECIONADO
-    // }
+    //DESMARCAR CO OUTRO SE JA ESTIVER SELECIONADO
+    if (selectedButton != null || itemButton.classList.contains('.selected')) {
+        itemButton.classList.remove('selected');
+    } 
+    itemButton.classList.add('selected');
+
+    finishButton('.finish', '.selected');
 }
 
-function finishButton() {
+function finishButton(test2, selectedItem) {
     // OUTRA FRASE E BUTTON DESABILITADO
-    //ONCLIK = FALSE
-    let finishOFF = document.getElementById("finishOFF");
-    let finishON = document.getElementById("finishON");
-    finishOFF.hidden = false;
-    finishON.hidden = true;
+    const finish = document.querySelector(test2);
+    const allItems = document.querySelectorAll(selectedItem);
+    // console.log(allItems); //"endereço"/caminho
+    // console.log(allItems.length); //quantidade
 
-    if (cont == 3) {
-        // HABILITAR BUTTON DE FECHAR PEDIDO SE PEDIDOS =3
-        finishOFF.hidden = true;
-        finishON.hidden = false;
-        //document.getElementById(".finish").style.color = green;
+    // const finishON = document.querySelector('finishON');
+
+    // HABILITAR BUTTON DE FECHAR PEDIDO SE PEDIDOS =3
+    if (allItems.length == 3) {
+        finish.classList.add('finishON');
+        finish.innerHTML = "<h5>Fechar pedido</h5>";
     }
 }
-

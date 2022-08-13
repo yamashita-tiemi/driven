@@ -57,8 +57,6 @@ body p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between;
-    align-items: center; */
     padding-left: 19px;
     margin-top: 141px;
 }
@@ -83,6 +81,7 @@ body p {
     align-items: center;
     margin-top: 17px;
     margin-right: 16px;
+    /* border: 5px solid rgb(3, 197, 3); */
 }
 .item img {
     width: 144px;
@@ -103,14 +102,15 @@ body p {
     flex-wrap: wrap;
 }
 
+.selected {
+    border: 5px solid rgb(3, 197, 3);
+}
+
 .drink {
     /* background-color: blue; */
     width: 100%;
-    height: 258px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between;
-    align-items: center; */
     padding-left: 19px;
     margin-top: 27px;
 }
@@ -118,11 +118,8 @@ body p {
 .dessert {
     /* background-color: blue; */
     width: 100%;
-    height: 258px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between;
-    align-items: center; */
     padding-left: 19px;
     margin-top: 27px;
     margin-bottom: 108px;
@@ -151,4 +148,12 @@ body p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* .finishOFF {
+    background-color: #CBCBCB;
+} */
+
+.finishON {
+    background-color: rgb(3, 197, 3);
 }

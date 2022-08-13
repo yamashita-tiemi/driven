@@ -21,7 +21,7 @@
                 <h1>Primeiro, seu prato</h1>
             </div>
             <div class="items">
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this)">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Frango Yin Yang</h3>
@@ -29,7 +29,7 @@
                         <h4>R$ 14,90</h4>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this)">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Frango Yin Yang</h3>
@@ -37,7 +37,7 @@
                         <h4>R$ 15,90</h4>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this)">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Frango Yin Yang</h3>
@@ -45,7 +45,7 @@
                         <h4>R$ 16,90</h4>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this)">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Frango Yin Yang</h3>
@@ -134,8 +134,8 @@
             </div>
         </div>
         <div class="bottom">
-            <div class="finish">
-                <h5 id="finishOFF">Selecione os 3 itens <br> para fechar o pedido</h5>
+            <div class="finish" onclick="finishButton('.finish', '.selected')">
+                <h5>Selecione os 3 itens <br> para fechar o pedido</h5>
                 <!-- <h5 id="finishON">Fechar pedido</h5> -->
             </div>
         </div>
