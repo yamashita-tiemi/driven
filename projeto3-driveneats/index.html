@@ -21,37 +21,41 @@
                 <h1>Primeiro, seu prato</h1>
             </div>
             <div class="items">
-                <div class="item" onclick="selectedItemButton(this)">
+                <div class="item" onclick="selectedItemButton(this,'dishCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
-                        <h4>R$ 14,90</h4>
+                            <h4>R$ 14,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item" onclick="selectedItemButton(this)">
+                <div class="item" onclick="selectedItemButton(this,'dishCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 15,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item" onclick="selectedItemButton(this)">
+                <div class="item" onclick="selectedItemButton(this,'dishCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 16,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item" onclick="selectedItemButton(this)">
+                <div class="item" onclick="selectedItemButton(this,'dishCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Frango Yin Yang</h3>
                         <p>Um pouco de batata, um pouco de salada</p>
                         <h4>R$ 17,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
@@ -60,37 +64,41 @@
                 <h1>Agora, sua bebida</h1>
             </div>
             <div class="items">
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this,'drinkCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Coquinhaaa</h3>
                         <p>Lata 350ml</p>
                         <h4>R$ 4,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this,'drinkCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Coquinhaaa</h3>
                         <p>Lata 350ml</p>
                         <h4>R$ 5,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this,'drinkCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Coquinhaaa</h3>
                         <p>Lata 350ml</p>
                         <h4>R$ 6,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this,'drinkCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Coquinhaaa</h3>
                         <p>Lata 350ml</p>
                         <h4>R$ 7,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
@@ -99,46 +107,50 @@
                 <h1>Por fim, sua sobremesa</h1>
             </div>
             <div class="items">
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this,'dessertCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Pudim</h3>
                         <p>Apenas pudim</p>
                         <h4>R$ 7,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this,'dessertCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Pudim</h3>
                         <p>Apenas pudim</p>
                         <h4>R$ 8,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this,'dessertCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Pudim</h3>
                         <p>Apenas pudim</p>
                         <h4>R$ 9,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div class="item">
+                <div class="item" onclick="selectedItemButton(this,'dessertCategory')">
                     <img src="./teste.jpg" />
                     <div class="infoItem">
                         <h3>Pudim</h3>
                         <p>Apenas pudim</p>
                         <h4>R$ 10,90</h4>
                     </div>
+                    <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
         <div class="bottom">
             <div class="finish" onclick="finishButton('.finish', '.selected')">
                 <h5>Selecione os 3 itens <br> para fechar o pedido</h5>
-                <!-- <h5 id="finishON">Fechar pedido</h5> -->
             </div>
         </div>
         <script src="scripts.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
 </html>

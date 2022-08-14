@@ -50,6 +50,8 @@ body p {
     padding-left: 21px;
     position: fixed;
     top: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 2;
 }
 
 .dish {
@@ -81,7 +83,9 @@ body p {
     align-items: center;
     margin-top: 17px;
     margin-right: 16px;
-    /* border: 5px solid rgb(3, 197, 3); */
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
 }
 .item img {
     width: 144px;
@@ -102,8 +106,22 @@ body p {
     flex-wrap: wrap;
 }
 
+ion-icon {
+    color: #32B72F;
+    font-size: 25px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    display: none;
+  }
+
 .selected {
-    border: 5px solid rgb(3, 197, 3);
+    border: 5px solid #32B72F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.selectedIcon ion-icon {
+    display: flex;
 }
 
 .drink {
@@ -135,6 +153,7 @@ body p {
     align-items: center;
     position: fixed;
     bottom: 0;
+    z-index: 1;
 }
 /* -----CENTRALIZAR O TEXTO---- */
 .finish {
