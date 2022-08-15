@@ -71,7 +71,6 @@ body p {
     display: flex;
     overflow-x: scroll;
 }
-
 ::-webkit-scrollbar {
     display: none;
   }
@@ -95,12 +94,9 @@ body p {
     width: 144px;
     height: 87px;
     border-radius: 4px;
-    /* margin-top: 18px;
-    margin-bottom: 8px; */
 }
 
 .infoItem {
-    /* background-color: green; */
     width: 144px;
     height: 90px;
     display: flex;
@@ -117,13 +113,11 @@ ion-icon {
     bottom: 5px;
     right: 10px;
     display: none;
-  }
-
+}
 .selected {
     border: 5px solid #32B72F;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
 }
-
 .selectedIcon ion-icon {
     display: flex;
 }
@@ -159,7 +153,7 @@ ion-icon {
     bottom: 0;
     z-index: 1;
 }
-/* -----CENTRALIZAR O TEXTO---- */
+
 .finish {
     background-color: #CBCBCB;
     width: 364px;
@@ -172,11 +166,6 @@ ion-icon {
     justify-content: center;
     align-items: center;
 }
-
-/* .finishOFF {
-    background-color: #CBCBCB;
-} */
-
 .finishON {
     background-color: rgb(3, 197, 3);
 }
